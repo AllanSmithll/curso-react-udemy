@@ -3,4 +3,4 @@
 
 // var idade = prompt("Digite sua idade: "); // Perguntando a idade
 
-document.write(`<h1>Escrevendo um <i>h1</i> com "document"</h1>`); // Aqui eu escrevo um h2 na página HTML
+document.write(`<h1>Escrevendo um <i>h1</i> com "document"</h1>`); // Aqui eu escrevo um h1 na página HTML
