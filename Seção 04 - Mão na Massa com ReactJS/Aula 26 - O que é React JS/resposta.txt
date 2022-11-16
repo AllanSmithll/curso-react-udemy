@@ -1,0 +1,1 @@
+É uma ferramenta front-end que lida com componentes de m site, que por si só possui componentes dentro de outros componentes.
