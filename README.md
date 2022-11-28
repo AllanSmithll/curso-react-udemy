@@ -3,9 +3,9 @@ Repositório criado para acompanhar cada passo do curso "React Js do zero ao ava
 
 Apenas serão incluídos códigos que considero úteis para meu aprendizado.
 
-<h1>Comandos para rodar o React<h1>
+<h2>Comandos para rodar o React<h2>
 
-<h3>Para criar o App React: npx create-react-app nome-app (letras minúsculas sem acento)<h3>
+- Para criar o App React: npx create-react-app nome-app (letras minúsculas sem acento)
 - Não esquecer de usar o "cd" para chegar no app
 - Para rodar o App: npm start
 
