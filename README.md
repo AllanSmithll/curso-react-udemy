@@ -9,7 +9,7 @@ Apenas serão incluídos códigos que considero úteis para meu aprendizado.
 - Não esquecer de usar o "cd" para chegar no app
 - Para rodar o App: npm start
 
-<h1>Plugins do VS Code<h1>
+<h2>Plugins do VS Code<h2>
 
 - React Native/React/Redux snippets for es6/
 es7
