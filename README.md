@@ -5,7 +5,7 @@ Apenas serão incluídos códigos que considero úteis para meu aprendizado.
 
 <h1>Comandos para rodar o React<h1>
 
-- Para criar o App React: npx create-react-app nome-app (letras minúsculas sem acento)
+<h3>Para criar o App React: npx create-react-app nome-app (letras minúsculas sem acento)<h3>
 - Não esquecer de usar o "cd" para chegar no app
 - Para rodar o App: npm start
 
