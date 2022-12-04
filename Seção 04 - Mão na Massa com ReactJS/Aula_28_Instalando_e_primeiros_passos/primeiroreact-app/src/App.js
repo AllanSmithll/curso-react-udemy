@@ -1,7 +1,7 @@
 // 28/11/2022
 // Primeiro projeto React
 
-export default function App() {
+function App() {
     return (
         <div>
             <h1>Olá Mundo do React</h1>
@@ -9,3 +9,5 @@ export default function App() {
         </div>
     )
 }
+
+export default App();
