@@ -1,23 +1,41 @@
-import React from 'react';
+import React, { Component } from 'react'; // Precisa incluir o React.Component antes de fazer uma Class Component
 
-const Presentation = (props) => {
+class Equipe extends Component {
+    // A Class Component "renderiza" com o método render(), que se torna obrigatório
+    render() {
+        return(
+            <Sobre name={this.props.nome} position={this.props.cargo} old={this.props.idade}/> // O sobre acessa rapidamente as propriedades que são atribuídas a ele, sem que tenha explicitamente o parâmetro "props" no Componente
+        )
+    }
+}
+
+class Sobre extends Component {
+    // Também renderiza aqui, acessando rapidamente as proprieades
+    render() {
+        return(
+            <div>
+            <h2>Olá, sou(a) {this.props.name} </h2>
+            <h3>Cargo: {this.props.position}</h3>
+            <h3>idade: {this.props.old} anos</h3>
+            <hr/>
+            </div>
+        )
+    }
+}
+
+function App() {
+    // Aqui também faço a atribuição de propriedades para Equipe
     return(
         <div>
-            <h2>Olá! Eu sou {props.nome} e tenho {props.idade} anos.</h2>
+            <h1>Conheça nossa equipe:</h1>
+            <Equipe nome="Allan" cargo="Programador" idade="18" />
+            <Equipe nome="Anderson" cargo="Nutricionista" idade="19"/>
         </div>
     )
 }
 
-export default function App() {
-    // A função App que retornará nosso Aplicativo
-    return(
-        <div>
-            <h1>Olá Mundo</h1>
-            <Presentation nome="Allan" idade="18"/>
-            <Presentation nome="Anderson" idade="19" />
-        </div>
-    )
-}
+export default App;
+
 
 // import React, { Component } from 'react';
 
