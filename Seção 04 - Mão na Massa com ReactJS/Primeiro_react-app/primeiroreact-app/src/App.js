@@ -5,13 +5,15 @@ class App extends Component {
 
     constructor(props) {
         // Construtor que possui as propriedades mais importantes
-        super(props);
-        this.state = {
+        super(props); // Acessar todas as informações do componente pai (App)
+        this.state = { // Os estados desse Component
             nome: "Allan",
             contador: 0
         };
 
-        this.aumentar = this.aumentar.bind(this)
+        // Lembrando que o this serve para acessar cada variável
+
+        this.aumentar = this.aumentar.bind(this) // bind() serve para que a função consiga ser usada pela aplicação
         this.diminuir = this.diminuir.bind(this)
     }
 
@@ -24,8 +26,8 @@ class App extends Component {
 
     diminuir () {
         let stateDiminuir = this.state;
-        if(this.contador === 0) {
-            alert('Chegamos a zero!');
+        if(stateDiminuir.contador === 0) {
+            alert('Chegamos a zero! Não pode diminuir mais.');
             return;
         }
 
