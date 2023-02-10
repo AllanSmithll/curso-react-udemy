@@ -1,53 +1,42 @@
 import React, { Component } from 'react';
+import './App.css'
 
 class App extends Component {
-    // Class Component
 
     constructor(props) {
-        // Construtor que possui as propriedades mais importantes
-        super(props); // Acessar todas as informações do componente pai (App)
-        this.state = { // Os estados desse Component
-            nome: "Allan",
-            contador: 0
-        };
-
-        // Lembrando que o this serve para acessar cada variável
-
-        this.aumentar = this.aumentar.bind(this) // bind() serve para que a função consiga ser usada pela aplicação
-        this.diminuir = this.diminuir.bind(this)
-    }
-
-    aumentar() {
-        let state = this.state;
-        state.contador += 1
-        state.nome = "Anderson"
-        this.setState(state);
-    }
-
-    diminuir () {
-        let stateDiminuir = this.state;
-        if(stateDiminuir.contador === 0) {
-            alert('Chegamos a zero! Não pode diminuir mais.');
-            return;
+        super(props);
+        this.state = {
+            status: true
         }
 
-        stateDiminuir.contador -= 1;
-        this.setState(stateDiminuir);
+        this.sair = this.sair.bind(this)
+        this.entrar = this.entrar.bind(this)
+
     }
 
+    sair() {
+        this.setState({status: false})
+    }
 
+    entrar() {
+        this.setState({status: true})
+    }
+    
     render() {
         return (
             <div>
-                <h1>Contador</h1>
-                <h2>{this.state.nome}</h2>
-                <h3>
-                    <button onClick={this.diminuir}>-</button>
-                    {this.state.contador}
-                    <button onClick={this.aumentar}>+</button>
-                </h3>
+                {this.state.status ? // se o status for tru
+                <div>
+                    <h2>Curso React JS</h2>
+                    <button onClick={this.sair}>Sair</button>
+                </div> : // Caso não seja true
+                <div>
+                    <h2>Olá, visitante, faça o login!</h2>
+                    <button onClick={this.entrar}>Fazer Login</button>
+                </div>
+                }
             </div>
-        )
+        );
     }
 }
 
