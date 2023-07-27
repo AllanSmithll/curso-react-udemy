@@ -1,4 +1,4 @@
-// Switch
+// Switch - 27/07/2023
 
 document.write('</br> Escolha seu pedido: </br>');
 document.write('</br> 0 - Sorvete / 1 - Suco </br>');
